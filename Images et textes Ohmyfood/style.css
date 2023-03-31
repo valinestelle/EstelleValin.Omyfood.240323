@@ -1,0 +1,22 @@
+/*********general**********/
+:root {
+    --light-green: #99E2D0;
+    --dark-green:  #008766;
+    --light-blue:  #89C8FA;
+    --dark-blue: #003A68;
+    --purple: #9356DC;
+    --light-grey: #D2D2D2;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
