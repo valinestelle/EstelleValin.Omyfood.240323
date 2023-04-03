@@ -1,5 +1,4 @@
 $primaire: red;
-$size-title: 'Shrikhand', sans-serif;
 
 body {
     margin: 0;
@@ -8,5 +7,5 @@ body {
 
 h1 {
     color: $primaire;
-    font-size: $size-title;
+    font-family: 'Shrikhand', cursive;
 }
