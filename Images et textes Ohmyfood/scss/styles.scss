@@ -1,0 +1,12 @@
+$primaire: red;
+$size-title: 'Shrikhand', sans-serif;
+
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+h1 {
+    color: $primaire;
+    font-size: $size-title;
+}
