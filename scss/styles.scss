@@ -1,8 +1,8 @@
-$primaire: red;
+@import '_variables';
 
 body {
     margin: 0;
-    background-color: aqua;
+    background-color:$primaire;
 }
 
 h1 {
