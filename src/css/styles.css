@@ -2,12 +2,20 @@ body {
   margin: 0;
 }
 
-h1 {
+.header {
+  position: relative;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header h1 {
+  position: absolute;
+  margin: 0;
+  bottom: 5%;
+  left: 28%;
   font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 30px;
   font-style: italic;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 nav {
