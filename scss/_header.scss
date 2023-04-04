@@ -1,6 +1,29 @@
 h1 {
-    font-family: 'Shrikhand', cursive;
+    font-family: $police1;
     text-align: $centrer;
     font-size: 30px;
     font-style: $style;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    display: flex;
+    justify-content: $centrer;
+    background-color: #EAEAEA;
+    height: 50px;
+
+    & form {
+        display: flex;
+        align-items: $centrer;
+        gap: 17px;
+
+        & input {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $police2;
+            border: none;
+            text-align: $centrer;
+            width: 109px;
+        }
+    }
 }

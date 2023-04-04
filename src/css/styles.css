@@ -7,4 +7,25 @@ h1 {
   text-align: center;
   font-size: 30px;
   font-style: italic;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  height: 50px;
+}
+nav form {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+nav form input {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  text-align: center;
+  width: 109px;
 }/*# sourceMappingURL=styles.css.map */
