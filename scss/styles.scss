@@ -2,10 +2,6 @@
 
 body {
     margin: 0;
-    background-color:$primaire;
 }
 
-h1 {
-    color: $primaire;
-    font-family: 'Shrikhand', cursive;
-}
+@import '_header';
