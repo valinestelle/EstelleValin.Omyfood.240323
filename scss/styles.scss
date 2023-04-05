@@ -4,6 +4,11 @@ body {
     margin: 0;
     background-color: $body-color;
 }
+h2 {
+    font-size: $size-title;
+    font-weight: 700;
+    font-family: $police2;
+}
 
 @import '_header';
 @import '_button-nav';

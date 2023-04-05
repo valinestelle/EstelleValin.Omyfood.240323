@@ -2,7 +2,7 @@
     position: relative;
     height: 63px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    background-color: $header-color;
+    background-color: $primaire;
 
     h1 {
         position: absolute;
@@ -19,7 +19,7 @@
 nav {
     display: flex;
     justify-content: $centrer;
-    background-color: #EAEAEA;
+    background-color: $color-5;
     height: 50px;
 
     & form {
@@ -34,6 +34,7 @@ nav {
             border: none;
             text-align: $centrer;
             width: 109px;
+            background-color: $color-5;
         }
     }
 }

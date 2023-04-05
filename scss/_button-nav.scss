@@ -24,8 +24,8 @@
         border-radius: $border-btn;
         font-size: $size-p;
         border: none;
-        background:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-        color: white;
+        background: $tertiaire;
+        color: $primaire;
         cursor: pointer;
     }
    
