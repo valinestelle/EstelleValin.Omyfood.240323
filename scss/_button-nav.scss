@@ -1,0 +1,35 @@
+.button {
+    font-family: $police2;
+    display: flex;
+    flex-direction: column;
+    text-align: $centrer;
+    align-items: $centrer;
+    gap: 30px;
+    .button__text {
+         width: 100%;
+         & .button__title {
+            width: 70%;
+            height: 68px;
+            margin: auto;
+            margin-top: 40px;
+         }
+         & .button__subtitle {
+            width: 90%;
+            margin: auto;
+         }  
+    }
+    button {
+        width: 218px;
+        height: 50px;
+        border-radius: $border-btn;
+        font-size: $size-p;
+        border: none;
+        background:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: white;
+        cursor: pointer;
+    }
+   
+    
+    
+    
+}
