@@ -1,0 +1,16 @@
+.menu__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.card {
+    &__img {
+        height: 231px;
+        border-radius: 15px;
+        background-size: cover;
+    }
+    &__img-1 {
+        background-image: url("../src/images/restaurants/menu-1.jpg");
+    }
+}
