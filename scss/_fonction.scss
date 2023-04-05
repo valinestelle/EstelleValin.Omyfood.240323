@@ -1,0 +1,31 @@
+.fonction {
+    position: relative;
+    background-color: $header-color;
+    height: 440px;
+    top: 40px;
+    h2 {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: $size-title;
+    }
+    .list__btn {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 20%;
+        left: 10%;
+        height: 72.38px;
+        width: 80%;
+        gap: 20px;
+        .btn {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            background-color: $body-color;
+            border-radius: $btn-rounded;
+            
+        }
+    }
+}

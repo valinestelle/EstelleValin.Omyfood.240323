@@ -70,4 +70,35 @@ nav form input {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
   cursor: pointer;
+}
+
+.fonction {
+  position: relative;
+  background-color: white;
+  height: 440px;
+  top: 40px;
+}
+.fonction h2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 24px;
+}
+.fonction .list__btn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  left: 10%;
+  height: 72.38px;
+  width: 80%;
+  gap: 20px;
+}
+.fonction .list__btn .btn {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 20px;
 }/*# sourceMappingURL=styles.css.map */
