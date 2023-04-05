@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: #f7f7f7;
@@ -6,7 +10,6 @@ body {
 h2 {
   font-size: 24px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -40,7 +43,6 @@ nav form {
 nav form input {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   border: none;
   text-align: center;
   width: 109px;
@@ -48,7 +50,6 @@ nav form input {
 }
 
 .button {
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -67,6 +68,7 @@ nav form input {
 .button .button__text .button__subtitle {
   width: 90%;
   margin: auto;
+  font-weight: 300;
 }
 .button button {
   width: 218px;
@@ -96,20 +98,17 @@ nav form input {
   flex-direction: column;
   gap: 30px;
   width: 85%;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .fonction__btn {
   position: relative;
-  display: flex;
-  text-align: center;
-  align-items: center;
   background-color: #f7f7f7;
   border-radius: 20px;
   height: 72.38px;
-  gap: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 .fonction__btn .fonction__text__btn {
   position: absolute;
@@ -118,8 +117,25 @@ nav form input {
   transform: translateX(-50%) translateY(-50%);
   font-size: 15.67px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  line-height: 19px;
 }
 .fonction__btn .fonction__icone {
+  position: absolute;
   color: #7e7e7e;
+  line-height: 19px;
+  top: 31%;
+  left: 10%;
+  font-size: 18px;
+}
+.fonction__btn .fonction__number {
+  position: absolute;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  line-height: 25px;
+  text-align: center;
+  left: -3%;
+  top: 9%;
 }/*# sourceMappingURL=styles.css.map */

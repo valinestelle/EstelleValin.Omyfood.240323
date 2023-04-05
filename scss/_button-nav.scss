@@ -1,5 +1,4 @@
 .button {
-    font-family: $police2;
     display: flex;
     flex-direction: column;
     text-align: $centrer;
@@ -16,6 +15,7 @@
          & .button__subtitle {
             width: 90%;
             margin: auto;
+            font-weight: 300;
          }  
     }
     button {

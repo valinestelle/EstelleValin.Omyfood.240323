@@ -1,5 +1,8 @@
 @import '_variables';
 
+* {
+    font-family: $police2;
+}
 body {
     margin: 0;
     background-color: $secondaire;
@@ -7,9 +10,10 @@ body {
 h2 {
     font-size: $size-title;
     font-weight: 700;
-    font-family: $police2;
 }
 
 @import '_header';
 @import '_button-nav';
 @import '_fonction';
+
+
