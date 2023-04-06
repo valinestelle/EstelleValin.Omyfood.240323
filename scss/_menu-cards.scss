@@ -7,12 +7,20 @@
 .card {
     &__img {
         height: 231px;
+        width: 90%;
         border-radius: 15px;
-        background-size: cover;
+        background-size:cover;
     }
     &__img-1 {
        background-image: url("../../src/images/restaurants/menu-1.jpg");
     }
-}   &__img-2 {
-      background-image: url("../../src/images/restaurants/menu-2.jpg");
-}
+    &__img-2 {
+        background-image: url("../../src/images/restaurants/menu-2.jpg");
+    }
+    &__img-3 {
+        background-image: url("../../src/images/restaurants/menu-3.jpg");
+    }
+    &__img-4 {
+        background-image: url("../../src/images/restaurants/menu-4.jpg");
+    }
+}   

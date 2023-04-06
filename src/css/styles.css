@@ -148,9 +148,19 @@ nav form input {
 
 .card__img {
   height: 231px;
+  width: 90%;
   border-radius: 15px;
   background-size: cover;
 }
 .card__img-1 {
   background-image: url("../../src/images/restaurants/menu-1.jpg");
+}
+.card__img-2 {
+  background-image: url("../../src/images/restaurants/menu-2.jpg");
+}
+.card__img-3 {
+  background-image: url("../../src/images/restaurants/menu-3.jpg");
+}
+.card__img-4 {
+  background-image: url("../../src/images/restaurants/menu-4.jpg");
 }/*# sourceMappingURL=styles.css.map */
