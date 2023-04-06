@@ -163,7 +163,7 @@ nav form input {
 
 h2 {
   margin-top: 50px;
-  margin-left: 21px;
+  margin-left: 19px;
 }
 
 .card__img {
@@ -171,7 +171,7 @@ h2 {
   width: 90%;
   border-radius: 15px;
   background-size: cover;
-  margin-left: 21px;
+  margin-left: 19px;
 }
 .card__img-1 {
   background-image: url("../../src/images/restaurants/menu-1.jpg");
