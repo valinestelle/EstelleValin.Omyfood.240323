@@ -158,7 +158,7 @@ nav form input {
   display: grid;
   place-items: center;
   top: 20px;
-  right: 30px;
+  right: 20px;
 }
 
 h2 {
@@ -166,12 +166,15 @@ h2 {
   margin-left: 19px;
 }
 
+.card {
+  margin: 0 20px 0 20px;
+}
 .card__img {
   height: 231px;
-  width: 90%;
+  width: auto;
   border-radius: 15px;
   background-size: cover;
-  margin-left: 19px;
+  margin: 0;
 }
 .card__img-1 {
   background-image: url("../../src/images/restaurants/menu-1.jpg");
