@@ -12,6 +12,15 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   position: relative;
   height: 63px;
@@ -169,11 +178,12 @@ h2 {
 
 .card {
   margin: 0 20px 0 20px;
+  background-color: white;
 }
 .card__img {
   height: 231px;
   width: auto;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   background-size: cover;
   margin: 0;
 }
@@ -188,4 +198,22 @@ h2 {
 }
 .card__img-4 {
   background-image: url("../../src/images/restaurants/menu-4.jpg");
+}
+.card__description {
+  position: relative;
+}
+.card__description h3 {
+  margin: 15px 15px 5px 15px;
+  font-size: 18px;
+}
+.card__description p {
+  margin: 0px 15px 15px 15px;
+  font-size: 17px;
+}
+.card__description i {
+  position: absolute;
+  font-size: 25px;
+  top: 40%;
+  left: 89%;
+  transform: translateX(-40%) translateY(-40%);
 }/*# sourceMappingURL=styles.css.map */

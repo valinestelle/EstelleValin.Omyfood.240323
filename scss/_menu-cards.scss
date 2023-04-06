@@ -26,18 +26,36 @@ h2 {
 
 .card {
     margin: 0 20px 0 20px;
+    background-color: $primaire;
     &__img {
         height: 231px;
         width: auto;
-        border-radius: 15px;
+        border-radius: 15px 15px 0 0;
         background-size:cover;
-        margin: 0;
-        
+        margin: 0;  
     }
     @for $i from 1 through 4 {
         &__img-#{$i} {
             background-image: url("../../src/images/restaurants/menu-#{$i}.jpg");
         }
+    }
+    &__description {
+      position: relative;
+      h3 {
+        margin: 15px 15px 5px 15px;
+        font-size: 18px;
+      }
+      p {
+        margin: 0px 15px 15px 15px;
+        font-size: 17px;
+      }
+      i {
+        position: absolute;
+        font-size: 25px;
+        top: 40%;
+        left: 89%;
+        transform: translateX(-40%) translateY(-40%);
+      }
     }
   
 }   
