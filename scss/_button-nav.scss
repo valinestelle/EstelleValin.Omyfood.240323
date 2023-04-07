@@ -4,20 +4,24 @@
     text-align: $centrer;
     align-items: $centrer;
     gap: 30px;
+
     .button__text {
-         width: 100%;
-         & .button__title {
+        width: 100%;
+
+        & .button__title {
             width: 70%;
             height: 68px;
             margin: auto;
             margin-top: 40px;
-         }
-         & .button__subtitle {
+        }
+
+        & .button__subtitle {
             width: 90%;
             margin: auto;
             font-weight: 300;
-         }  
+        }
     }
+
     button {
         width: 218px;
         height: 50px;
@@ -27,9 +31,9 @@
         background: $tertiaire;
         color: $primaire;
         cursor: pointer;
+        transition: 450ms;
+        &:active {
+            transform: scale(1.2);
+        }
     }
-   
-    
-    
-    
 }

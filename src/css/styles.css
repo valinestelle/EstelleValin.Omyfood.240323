@@ -89,6 +89,10 @@ nav form input {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
   cursor: pointer;
+  transition: 450ms;
+}
+.button button:active {
+  transform: scale(1.2);
 }
 
 .fonction {
@@ -119,6 +123,10 @@ nav form input {
   border-radius: 20px;
   height: 72.38px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: 200ms;
+}
+.fonction__btn:hover {
+  transform: scale(1.1);
 }
 .fonction__btn .fonction__text__btn {
   position: absolute;
@@ -136,6 +144,9 @@ nav form input {
   top: 31%;
   left: 10%;
   font-size: 18px;
+}
+.fonction__btn .fonction__icone:hover {
+  color: #9356DC;
 }
 .fonction__btn .fonction__number {
   position: absolute;
@@ -182,7 +193,11 @@ h2 {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.card__img {
+.card__img-2 {
+  background-position: center;
+}
+.card__img-1 {
+  background-image: url("../../src/images/restaurants/menu-1.jpg");
   height: 170px;
   width: auto;
   border-radius: 15px 15px 0 0;
@@ -191,19 +206,31 @@ h2 {
   margin: 0;
 }
 .card__img-2 {
-  background-position: center;
-}
-.card__img-1 {
-  background-image: url("../../src/images/restaurants/menu-1.jpg");
-}
-.card__img-2 {
   background-image: url("../../src/images/restaurants/menu-2.jpg");
+  height: 170px;
+  width: auto;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
 }
 .card__img-3 {
   background-image: url("../../src/images/restaurants/menu-3.jpg");
+  height: 170px;
+  width: auto;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
 }
 .card__img-4 {
   background-image: url("../../src/images/restaurants/menu-4.jpg");
+  height: 170px;
+  width: auto;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
 }
 .card__description {
   position: relative;
