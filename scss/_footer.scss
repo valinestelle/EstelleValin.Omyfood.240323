@@ -5,6 +5,11 @@ footer {
     color: $primaire;
     margin-top: 20%;
 
+    @media screen and (min-width: 768px) {
+        height: 114px;
+        margin: 0;
+    }
+
     .text-footer,
     h3 {
         position: absolute;
@@ -14,7 +19,14 @@ footer {
         top: 60%;
         left: 32%;
         transform: translateX(-50%) translateY(-50%);
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            left: 55%;
+        }
     }
+
     h3 {
         left: 25%;
         top: -30%;
@@ -22,5 +34,20 @@ footer {
         font-family: $police1;
         font-style: $style;
         font-weight: 400;
+        @media screen and (min-width: 768px) {
+            top: 30%;
+            left: 130%;
+        }
+    }
+
+   
+}
+@media screen and (min-width: 768px) {
+    .text-footer i {
+        padding: 0 10px;
+    }
+    .text-footer__text-2 {
+        gap: 20px;
+        display: flex;
     }
 }
