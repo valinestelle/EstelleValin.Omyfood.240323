@@ -1,62 +1,75 @@
 .menus__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+
+  .badge {
+    position: relative;
+  }
+
+  .badge::before {
+    content: "Nouveau";
+    position: absolute;
+    width: 80px;
+    height: 29px;
+    background-color: $color-7;
+    color: darken($color-7, 50%);
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    .badge {
-        position: relative;
-    }
-    .badge::before {
-        content: "Nouveau";
-        position: absolute;
-        width: 80px;
-        height: 29px;
-        background-color: $color-7;
-        color: darken($color-7, 50%);
-        display: grid;
-        place-items: $centrer;
-        top: 20px;
-        right: 20px;
-    }
+    place-items: $centrer;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 h2 {
-    margin-top: 50px;
-    margin-left: 19px;
+  margin-top: 50px;
+  margin-left: 19px;
 }
 
 .card {
-    margin: 0 20px 0 20px;
-    background-color: $primaire;
-    border-radius: 15px;
-    &__img {
-        height: 231px;
-        width: auto;
-        border-radius: 15px 15px 0 0;
-        background-size:cover;
-        margin: 0;  
-    }
-    @for $i from 1 through 4 {
-        &__img-#{$i} {
-            background-image: url("../../src/images/restaurants/menu-#{$i}.jpg");
-        }
-    }
-    &__description {
-      position: relative;
-      h3 {
-        margin: 15px 15px 5px 15px;
-        font-size: 18px;
-      }
-      p {
-        margin: 0px 15px 15px 15px;
-        font-size: 17px;
-      }
-      i {
-        position: absolute;
-        font-size: 25px;
-        top: 40%;
-        left: 89%;
-        transform: translateX(-40%) translateY(-40%);
-      }
-    }
-  
-}   
+  margin: 0 20px 0 20px;
+  background-color: $primaire;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+&__img-2 {
+  background-position: $centrer;
+}
+
+@for $i from 1 through 4 {
+  &__img-#{$i} {
+    background-image: url("../../src/images/restaurants/menu-#{$i}.jpg");
+    height: 170px;
+    width: auto;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+  }
+}
+
+&__description {
+  position: relative;
+
+  h3 {
+    margin: 15px 15px 5px 15px;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0px 15px 15px 15px;
+    font-size: 17px;
+  }
+
+  i {
+    position: absolute;
+    font-size: 25px;
+    top: 40%;
+    left: 89%;
+    transform: translateX(-40%) translateY(-40%);
+  }
+}
+
+}
