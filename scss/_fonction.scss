@@ -3,6 +3,9 @@
     background-color: $primaire;
     height: 440px;
     margin-top: 60px;
+    @media screen and (min-width: 768px) {
+        height: 228.38px;
+    }
     h2 {
       position: absolute;
       left: -3px; 
@@ -10,13 +13,18 @@
     }
     .fonction__list {
         position: absolute;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
         gap: 30px;
         width: 85%;
         top: 57%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(3, 28%);
+            justify-content: $centrer;
+        }
     }
   
 }

@@ -2,10 +2,11 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding: 50px 180px;
+    grid-template-columns: repeat(2, 39%);
+    justify-content: $centrer;
+    padding: 0 0 50px;
   }
 
   .badge {
@@ -29,8 +30,9 @@
 h2 {
   margin-top: 50px;
   margin-left: 19px;
+
   @media screen and (min-width: 768px) {
-    margin-left: 200px;
+    margin-left: 170px;
   }
 }
 
@@ -39,41 +41,45 @@ h2 {
   background-color: $primaire;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-&__img-2 {
-    background-position: $centrer;
+
+  @for $i from 1 through 4 {
+    &__img-#{$i} {
+      background-image: url("../../src/images/restaurants/menu-#{$i}.jpg");
+      height: 170px;
+      width: auto;
+      border-radius: 15px 15px 0 0;
+      background-size: cover;
+      background-position: bottom;
+      margin: 0;
+
+      @media screen and (min-width: 768px) {
+        background-position: $centrer;
+      }
+    }
+        &__img-2 {
+          background-position: $centrer;
+        }
   }
 
-@for $i from 1 through 4 {
-  &__img-#{$i} {
-    background-image: url("../../src/images/restaurants/menu-#{$i}.jpg");
-    height: 170px;
-    width: auto;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: bottom;
-    margin: 0;
-  }
-}
+  &__description {
+    position: relative;
 
-&__description {
-  position: relative;
+    h3 {
+      margin: 15px 15px 5px 15px;
+      font-size: 18px;
+    }
 
-  h3 {
-    margin: 15px 15px 5px 15px;
-    font-size: 18px;
-  }
+    p {
+      margin: 0px 15px 15px 15px;
+      font-size: 17px;
+    }
 
-  p {
-    margin: 0px 15px 15px 15px;
-    font-size: 17px;
+    i {
+      position: absolute;
+      font-size: 25px;
+      top: 40%;
+      left: 89%;
+      transform: translateX(-40%) translateY(-40%);
+    }
   }
-
-  i {
-    position: absolute;
-    font-size: 25px;
-    top: 40%;
-    left: 89%;
-    transform: translateX(-40%) translateY(-40%);
-  }
-}
 }
