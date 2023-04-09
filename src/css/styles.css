@@ -365,8 +365,11 @@ img {
      object-position: center;
 }
 
-.header-card h2 {
+.header-card h4 {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
 }/*# sourceMappingURL=styles.css.map */
