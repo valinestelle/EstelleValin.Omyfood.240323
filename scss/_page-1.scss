@@ -2,5 +2,15 @@ img {
     width: 100%;
     height: 275px;
     object-fit: cover;
+    object-position: $centrer;
 }
 
+    .header-card {
+        h2 {
+            display: flex;
+            justify-content: $centrer;
+            gap: 30px;
+            
+        }
+
+    }

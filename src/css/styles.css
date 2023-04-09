@@ -318,7 +318,7 @@ footer h3 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   top: 60%;
   left: 32%;
   transform: translateX(-50%) translateY(-50%);
@@ -361,4 +361,12 @@ img {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header-card h2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }/*# sourceMappingURL=styles.css.map */
