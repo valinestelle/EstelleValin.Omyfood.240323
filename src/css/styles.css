@@ -139,6 +139,11 @@ nav form input {
   height: 72.38px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
+.fonction__btn:hover {
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
 .fonction__btn .fonction__text__btn {
   position: absolute;
   left: 45%;
