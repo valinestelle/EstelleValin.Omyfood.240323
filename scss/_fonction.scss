@@ -1,78 +1,64 @@
 .fonction {
-    position: relative;
-    background-color: $primaire;
+    background: $primaire;
+    display: flex;
+    flex-direction: column;
     height: 440px;
-    margin-top: 60px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint) {
+        padding: 50px 180px 50px 180px;
         height: 228.38px;
     }
-    h2 {
-      position: absolute;
-      left: -3px; 
-      top: 1px;
-    }
-    .fonction__list {
-        position: absolute;
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 30px;
-        width: 85%;
-        top: 57%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        
-        @media screen and (min-width: 768px) {
-            display: grid;
-            grid-template-columns: repeat(3, 28%);
-            justify-content: $centrer;
-        }
-    }
-  
-}
 
-.fonction__btn {
-    position: relative;
-    background-color: $secondaire;
-    border-radius: $btn-rounded;
-    height: 72.38px;
-    box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.15);
-    transition: 200ms;
-    &:hover {
-        background-color: $primaire;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
-        transform: scale(1.1);
+    h2 {
+        padding: 30px 0 5px 20px;
     }
-    
-    .fonction__text__btn {
-        position: absolute;
-        left: 45%;
-        top: 25%;
-        transform: translateX(-50%) translateY(-50%);
-        font-size: 15.67px;
-        font-weight: 500;
-        line-height: 19px;
-    }
-    .fonction__icone {
-        position: absolute;
-        color: $color-4;
-        line-height: 19px;
-        top: 31%;
-        left: 10%;
-        font-size: 18px;
-        &:hover  {
-          color: $color-6;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: $centrer;
+        gap: 25px;
+        @media screen and (min-width: $breakpoint) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
-    .fonction__number {
-        position: absolute;
-        color: $primaire;
-        background-color: $color-6;
-        border-radius: 50%;
-        height: 24px;
-        width: 24px;
-        line-height: 25px;
-        text-align: center;
-        left: -3%;
-        top: 9%    
+
+    .fonction__btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        height: 72.38px;
+        width: 85%;
+        background: $secondaire;
+        border-radius: 15px;
+        box-shadow: $shadow;
+        transition: 200ms;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.30);
+        }
+        
+        .fonction__number {
+            background: $color-6;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 25px;
+            color: $primaire;
+            margin-left: -10px;
+        } 
+        .fonction__icone { 
+            font-size: 18px;
+            color: $color-4;
+            margin-bottom: 7px;
+            &:hover {
+                color: $color-6;
+            }
+        }
+        .fonction__text__btn {
+            font-weight: 500;
+        }
     }
 }

@@ -1,19 +1,11 @@
 @import '_variables';
 @import '_mixins';
 
-* {
-    font-family: $police2;
-}
-
 body {
     margin: 0;
     background-color: $secondaire;
-}
-
-
-h2 {
-    font-size: $size-title;
-    font-weight: 700;
+    font-family: $police2;
+    box-sizing: border-box;
 }
 
 h3 {

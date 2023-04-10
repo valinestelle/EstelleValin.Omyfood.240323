@@ -1,12 +1,15 @@
-.menus__cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+.menus {
+  @media screen and (min-width: $breakpoint) {
+    padding: 50px 180px 50px 180px;
+  }
+  .menus__cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
 
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 39%);
+  @media screen and (min-width: $breakpoint) {
+    grid-template-columns: repeat(2, 50%);
     justify-content: $centrer;
-    padding: 0 0 50px;
   }
 
   .badge {
@@ -28,12 +31,8 @@
 }
 
 h2 {
-  margin-top: 50px;
-  margin-left: 19px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 170px;
-  }
+padding: 0 0 0 10px;
+}
 }
 
 .card {
@@ -52,7 +51,7 @@ h2 {
       background-position: bottom;
       margin: 0;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $breakpoint) {
         background-position: $centrer;
       }
     }
