@@ -8,8 +8,9 @@
       gap: 20px;
 
   @media screen and (min-width: $breakpoint) {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48.3%);
     justify-content: $centrer;
+    gap: 60px;
   }
 
   .badge {

@@ -15,9 +15,7 @@ h3 {
 a {
     text-decoration: none;
     color: inherit;
-    &:hover {
-        text-decoration: underline;
-    }
+   
 }
 
 @import '_header';

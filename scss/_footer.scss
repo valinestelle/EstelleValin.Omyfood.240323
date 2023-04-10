@@ -1,57 +1,80 @@
 footer {
-    position: relative;
-    background-color: $color-8;
-    height: 186px;
+    background: $color-8;
     color: $primaire;
-    margin-top: 20%;
+    padding: 22px 25px 22px 25px;
+    margin-top: 70px;
 
     @media screen and (min-width: $breakpoint) {
-        height: 114px;
+        display: flex;
+        padding: 0px 25px 30px 25px;
+        justify-content: flex-end;
+        align-items: flex-end;
         margin: 0;
+        height: 114px;
     }
 
-    .text-footer,
-    h3 {
-        position: absolute;
+    .text-footer {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        top: 60%;
-        left: 32%;
-        transform: translateX(-50%) translateY(-50%);
+        gap: 20px;
 
         @media screen and (min-width: $breakpoint) {
             display: flex;
             flex-direction: row;
-            gap: 20px;
-            left: 55%;
+            gap: 60px;
         }
-    }
 
-    h3 {
-        left: 25%;
-        top: -30%;
-        font-size: 18px;
-        font-family: $police1;
-        font-style: $style;
-        font-weight: 400;
+        .liens {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
 
-        @media screen and (min-width: $breakpoint) {
-            top: 30%;
-            left: 130%;
+            @media screen and (min-width: $breakpoint) {
+                gap: 60px;
+            }
+
+            &__liens-1 {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                @media screen and (min-width: $breakpoint) {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            &__liens-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                @media screen and (min-width: $breakpoint) {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            @media screen and (min-width: $breakpoint) {
+                display: flex;
+                flex-direction: row;
+            }
         }
-    }
 
+        h3 {
+            font-family: $police1;
+            font-weight: 400;
 
-}
+            @media screen and (min-width: $breakpoint) {
+                order: 2;
+                line-height: 10px;
+                padding: 0 50px;
+            }
+        }
 
-@media screen and (min-width: 768px) {
-    .text-footer i {
-        padding: 0 10px;
-    }
-
-    .text-footer__text-2 {
-        gap: 20px;
-        display: flex;
+        &__liens {
+            display: flex;
+            gap: 10px;
+        }
     }
 }

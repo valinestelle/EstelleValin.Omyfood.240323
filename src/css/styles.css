@@ -13,9 +13,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 .header {
   position: relative;
@@ -98,7 +95,7 @@ nav form input {
   flex-direction: column;
   height: 440px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .fonction {
     padding: 50px 180px 50px 180px;
     height: 228.38px;
@@ -113,7 +110,7 @@ nav form input {
   place-items: center;
   gap: 25px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .fonction__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,7 +154,7 @@ nav form input {
   font-weight: 500;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menus {
     padding: 50px 180px 50px 180px;
   }
@@ -167,10 +164,11 @@ nav form input {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menus .menus__cards {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48.3%);
     justify-content: center;
+    gap: 60px;
   }
 }
 .menus .menus__cards .badge {
@@ -207,7 +205,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .card__img-1 {
     background-position: center;
   }
@@ -224,7 +222,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .card__img-2 {
     background-position: center;
   }
@@ -241,7 +239,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .card__img-3 {
     background-position: center;
   }
@@ -258,7 +256,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .card__img-4 {
     background-position: center;
   }
@@ -331,61 +329,87 @@ nav form input {
 }
 
 footer {
-  position: relative;
-  background-color: #353535;
-  height: 186px;
+  background: #353535;
   color: white;
-  margin-top: 20%;
+  padding: 22px 25px 22px 25px;
+  margin-top: 70px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   footer {
-    height: 114px;
+    display: flex;
+    padding: 0px 25px 30px 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 0;
+    height: 114px;
   }
 }
-footer .text-footer,
-footer h3 {
-  position: absolute;
+footer .text-footer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  top: 60%;
-  left: 32%;
-  transform: translateX(-50%) translateY(-50%);
+  gap: 20px;
 }
-@media screen and (min-width: 1024px) {
-  footer .text-footer,
-  footer h3 {
+@media screen and (min-width: 768px) {
+  footer .text-footer {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    left: 55%;
+    gap: 60px;
   }
 }
-footer h3 {
-  left: 25%;
-  top: -30%;
-  font-size: 18px;
+footer .text-footer .liens {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  footer .text-footer .liens {
+    gap: 60px;
+  }
+}
+footer .text-footer .liens__liens-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  footer .text-footer .liens__liens-1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+footer .text-footer .liens__liens-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  footer .text-footer .liens__liens-2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .text-footer .liens {
+    display: flex;
+    flex-direction: row;
+  }
+}
+footer .text-footer h3 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
   font-weight: 400;
 }
-@media screen and (min-width: 1024px) {
-  footer h3 {
-    top: 30%;
-    left: 130%;
+@media screen and (min-width: 768px) {
+  footer .text-footer h3 {
+    order: 2;
+    line-height: 10px;
+    padding: 0 50px;
   }
+}
+footer .text-footer__liens {
+  display: flex;
+  gap: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .text-footer i {
-    padding: 0 10px;
-  }
-  .text-footer__text-2 {
-    gap: 20px;
-    display: flex;
-  }
-}
 img {
   width: 100%;
   height: 275px;
