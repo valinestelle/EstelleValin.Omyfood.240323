@@ -1,0 +1,18 @@
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "font awesome 5 free";
+    font-weight: 400;
+    content: "\f004";
+    position: absolute;
+    font-size: 25px;
+    top: 40%;
+    left: 89%;
+    transform: translateX(-40%) translateY(-40%);
+
+
+
+}

@@ -284,6 +284,21 @@ h2 {
 .card__description {
   position: relative;
 }
+.card__description::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "font awesome 5 free";
+  font-weight: 400;
+  content: "\f004";
+  position: absolute;
+  font-size: 25px;
+  top: 40%;
+  left: 89%;
+  transform: translateX(-40%) translateY(-40%);
+}
 .card__description h3 {
   margin: 15px 15px 5px 15px;
   font-size: 18px;
@@ -291,13 +306,6 @@ h2 {
 .card__description p {
   margin: 0px 15px 15px 15px;
   font-size: 17px;
-}
-.card__description i {
-  position: absolute;
-  font-size: 25px;
-  top: 40%;
-  left: 89%;
-  transform: translateX(-40%) translateY(-40%);
 }
 
 footer {

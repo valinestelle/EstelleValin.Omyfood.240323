@@ -64,6 +64,9 @@ h2 {
 
   &__description {
     position: relative;
+    &::before {
+      @include heart;
+    }
 
     h3 {
       margin: 15px 15px 5px 15px;
@@ -73,14 +76,6 @@ h2 {
     p {
       margin: 0px 15px 15px 15px;
       font-size: 17px;
-    }
-
-    i {
-      position: absolute;
-      font-size: 25px;
-      top: 40%;
-      left: 89%;
-      transform: translateX(-40%) translateY(-40%);
     }
   }
 }
