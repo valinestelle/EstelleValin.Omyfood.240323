@@ -332,7 +332,9 @@ h2 {
 }
 .card__description:hover::after {
   opacity: 1;
-  transform: scale(1);
+  top: 40%;
+  left: 89%;
+  transform: translateX(-40%) translateY(-40%) scale(1);
 }
 .card__description h3 {
   margin: 15px 15px 5px 15px;
