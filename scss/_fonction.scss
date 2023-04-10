@@ -36,6 +36,7 @@
     border-radius: $btn-rounded;
     height: 72.38px;
     box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: 200ms;
     &:hover {
         background-color: $primaire;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
