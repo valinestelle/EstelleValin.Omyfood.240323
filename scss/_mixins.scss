@@ -12,6 +12,11 @@
     top: 40%;
     left: 89%;
     transform: translateX(-40%) translateY(-40%);
+    color:inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
 
 
 
