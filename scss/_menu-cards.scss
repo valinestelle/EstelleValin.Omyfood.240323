@@ -76,10 +76,13 @@ h2 {
       font-weight: 900;
     }
 
+    &:hover::before {
+      opacity: 0;
+    }
+
     &:hover::after {
       opacity: 1;
-      top: 20%;
-      transform: translateY(-20%) translateX(-20%) scale(1);
+      transform: scale(1);
     }
 
     h3 {
