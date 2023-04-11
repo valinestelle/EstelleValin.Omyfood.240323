@@ -428,8 +428,13 @@ img {
 .header i {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 8%;
   transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .header i {
+    left: 3%;
+  }
 }
 
 main {
@@ -437,6 +442,11 @@ main {
   position: relative;
   margin-top: -20px;
   border-radius: 15px 15px 0 0;
+}
+@media screen and (min-width: 768px) {
+  main {
+    margin: -20px 180px 0 180px;
+  }
 }
 main .header-card h2 {
   display: flex;
@@ -459,6 +469,11 @@ main button {
   gap: 15px;
   margin-top: 30px;
 }
+@media screen and (min-width: 768px) {
+  .body-card {
+    padding: 0 180px 0 180px;
+  }
+}
 .body-card h3 {
   text-transform: uppercase;
   font-weight: 300;
@@ -472,11 +487,6 @@ main button {
   gap: 25px;
   place-items: center;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .body-card__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 .body-card__text-description {
   position: relative;
