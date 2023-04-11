@@ -6,6 +6,13 @@ img {
     display: block;
 }
 
+.header i {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 main {
     background: $secondaire;
     position: relative;
@@ -20,6 +27,7 @@ main {
             gap: 30px;
             font-family: $police1;
             font-size: 28px;
+            font-weight: 400;
             margin: 0;
         }
     }
@@ -29,12 +37,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
+    margin-top: 30px;
     h3 {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 16px;
         border-bottom: 3px solid $color-7;
+        margin-left: 15px;
     }
 
     &__grid {
@@ -42,6 +51,7 @@ main {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
         place-items: $centrer;
+        margin-bottom: 30px;
 
         @media screen and (min-width: $breakpoint) {
             grid-template-columns: repeat(3, 1fr);
@@ -53,7 +63,7 @@ main {
         position: relative;
         background: $primaire;
         border-radius: 15px;
-        width: 90%;
+        width: 93%;
         height: 69px;
         box-shadow: $shadow;
     }
@@ -69,9 +79,11 @@ main {
     p {
         margin: 0;
     }
+
     h4 {
         font-size: 18px;
     }
+
     p {
         font-size: 15px;
         font-weight: 300;
@@ -81,7 +93,7 @@ main {
 .body-card__euros {
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 91%;
     transform: translateX(-50%) translateY(-20%);
     font-size: 15px;
     font-weight: 700;
