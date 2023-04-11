@@ -441,7 +441,7 @@ main .header-card h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 400;
