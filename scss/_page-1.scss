@@ -3,17 +3,92 @@ img {
     height: 275px;
     object-fit: cover;
     object-position: $centrer;
+    display: block;
 }
 
+main {
+    background: $secondaire;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 15px 15px 0 0;
+
     .header-card {
-        h4 {
+        h2 {
             display: flex;
             justify-content: $centrer;
             align-items: $centrer;
             gap: 30px;
             font-family: $police1;
             font-size: 28px;
-            
+            margin: 0;
         }
-
     }
+}
+
+.body-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        border-bottom: 3px solid $color-7;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        place-items: $centrer;
+
+        @media screen and (min-width: $breakpoint) {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    &__text-description {
+        position: relative;
+        background: $primaire;
+        border-radius: 15px;
+        width: 90%;
+        height: 69px;
+        box-shadow: $shadow;
+    }
+}
+
+.body-card__name-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+
+    h4,
+    p {
+        margin: 0;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+.body-card__euros {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateX(-50%) translateY(-20%);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+footer {
+    margin: 0;
+}
