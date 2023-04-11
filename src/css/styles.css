@@ -329,6 +329,7 @@ nav form input {
 .card__description p {
   margin: 0px 15px 15px 15px;
   font-size: 17px;
+  font-weight: 300;
 }
 
 footer {
