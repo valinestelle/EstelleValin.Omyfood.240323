@@ -74,6 +74,7 @@ main {
         width: 93%;
         height: 69px;
         box-shadow: $shadow;
+        overflow: hidden;
     }
 }
 
@@ -107,6 +108,20 @@ main {
     font-weight: 700;
 }
 
+ .body-card__choice {
+     position: absolute;
+     top: 50%;
+     right: -10.5%;
+     transform: translateX(-50%) translateY(-50%);
+     background: $color-7;
+     width: 59px;
+     height: 69px;
+     align-items: $centrer;
+     justify-content: $centrer;
+     display: flex;
+     }
+
+     
 footer {
     margin: 0;
 }
