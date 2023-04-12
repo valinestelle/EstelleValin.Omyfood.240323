@@ -536,6 +536,7 @@ footer .text-footer__liens {
   font-size: 16px;
   border-bottom: 3px solid #99E2D0;
   margin-left: 15px;
+  padding: 0 0 5px 0;
 }
 .grid__content {
   display: grid;
@@ -543,6 +544,8 @@ footer .text-footer__liens {
   gap: 25px;
   place-items: center;
   margin-bottom: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .description {
@@ -554,8 +557,6 @@ footer .text-footer__liens {
   height: 69px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   cursor: pointer;
 }
 .description:hover {
@@ -581,15 +582,20 @@ footer .text-footer__liens {
   padding: 12px;
   gap: 5px;
   width: 285px;
+  overflow: hidden;
 }
 .description__name-menu h4 {
   font-size: 18px;
   margin: 0;
+  overflow: hidden;
 }
 .description__name-menu p {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .description__price {
   display: flex;
@@ -613,6 +619,7 @@ footer .text-footer__liens {
   display: grid;
   place-items: center;
   font-size: 20px;
+  flex-shrink: 0;
 }
 
 footer {
