@@ -12,9 +12,33 @@
     top: 40%;
     left: 89%;
     transform: translateX(-40%) translateY(-40%);
-    color:inherit;
+    color: inherit;
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
     transition: all 200ms ease-in-out;
+}
+
+@mixin heart-animation {
+    &::before {
+        @include heart;
+    }
+
+    &::after {
+        @include heart;
+        color: $tertiaire;
+        opacity: 0;
+        font-weight: 900;
+    }
+
+    &:hover::before {
+        opacity: 0;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        top: 40%;
+        left: 89%;
+        transform: translateX(-40%) translateY(-40%) scale(1);
+    }
 }

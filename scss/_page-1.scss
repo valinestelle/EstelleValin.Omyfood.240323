@@ -29,6 +29,7 @@ img {
 
     .header-card {
         h2 {
+            position: relative;
             display: flex;
             justify-content: $centrer;
             align-items: $centrer;
@@ -37,6 +38,7 @@ img {
             font-size: 28px;
             font-weight: 400;
             margin: 0;
+            @include heart-animation;
         }
     }
 

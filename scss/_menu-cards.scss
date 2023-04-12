@@ -1,40 +1,42 @@
 .menus {
   background: $secondaire;
+
   @media screen and (min-width: $breakpoint) {
     padding: 50px 180px 50px 180px;
   }
+
   .menus__cards {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-
-  @media screen and (min-width: $breakpoint) {
-    grid-template-columns: repeat(2, 48.3%);
-    justify-content: $centrer;
-    gap: 60px;
-  }
-
-  .badge {
-    position: relative;
-  }
-
-  .badge::before {
-    content: "Nouveau";
-    position: absolute;
-    width: 80px;
-    height: 29px;
-    background-color: $color-7;
-    color: darken($color-7, 50%);
     display: grid;
-    place-items: $centrer;
-    top: 20px;
-    right: 20px;
-  }
-}
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
 
-h2 {
-padding: 50px 0 0 10px;
-}
+    @media screen and (min-width: $breakpoint) {
+      grid-template-columns: repeat(2, 48.3%);
+      justify-content: $centrer;
+      gap: 60px;
+    }
+
+    .badge {
+      position: relative;
+    }
+
+    .badge::before {
+      content: "Nouveau";
+      position: absolute;
+      width: 80px;
+      height: 29px;
+      background-color: $color-7;
+      color: darken($color-7, 50%);
+      display: grid;
+      place-items: $centrer;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  h2 {
+    padding: 50px 0 0 10px;
+  }
 }
 
 .card {
@@ -65,28 +67,7 @@ padding: 50px 0 0 10px;
 
   &__description {
     position: relative;
-
-    &::before {
-      @include heart;
-    }
-
-    &::after {
-      @include heart;
-      color: $tertiaire;
-      opacity: 0;
-      font-weight: 900;
-    }
-
-    &:hover::before {
-      opacity: 0;
-    }
-
-    &:hover::after {
-      opacity: 1;
-      top: 40%;
-      left: 89%;
-      transform: translateX(-40%) translateY(-40%) scale(1);
-    }
+    @include heart-animation;
 
     h3 {
       margin: 15px 15px 5px 15px;
