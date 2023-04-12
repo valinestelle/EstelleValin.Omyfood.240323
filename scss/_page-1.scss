@@ -71,67 +71,74 @@ main {
         place-items: $centrer;
         margin-bottom: 30px;
     }
-
-    &__text-description {
-        position: relative;
-        background: $primaire;
-        border-radius: 15px;
-        width: 93%;
-        height: 69px;
-        box-shadow: $shadow;
-        overflow: hidden;
-        cursor: pointer;
-        transition: all 350ms;
-    }
 }
 
-.body-card__name-menu {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 5px;
-
-    h4,
-    p {
-        margin: 0;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 15px;
-        font-weight: 300;
-    }
-}
-
-.body-card__euros {
-    position: absolute;
-    top: 50%;
-    left: 91%;
-    transform: translateX(-50%) translateY(-20%);
-    font-size: 15px;
-    font-weight: 700;
-    &:hover {
-       right: -30%;
-    }
-}
-
-.body-card__check {
-    background: $color-7;
-    transform: translate(200px, -90px);
-    opacity: 0;
-    color: $primaire;
+.description {
+    position: relative;
+    background: $primaire;
+    border-radius: 15px;
+    width: 93%;
     height: 69px;
-    width: 59px;
-    border-radius: 0 10px 10px 0;
-    margin: auto;
-    text-align: $centrer;
-    transition: transform 320ms ease;
-    transition: opacity 320ms ease-in;
-}
+    box-shadow: $shadow;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 320ms;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:hover &__check {
+         transform: translate(165px, -75px);
+         opacity: 1;
+    }
+    &:hover &__euros {
+        right: -30%;
+    }
+
+    &__name-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 5px;
+        width: max-content;
+
+        h4 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+
+    &__euros {
+        position: absolute;
+        top: 50%;
+        left: 91%;
+        transform: translateX(-50%) translateY(-20%);
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__check {
+        background: $color-7;
+        transform: translate(205px, -75px);
+        opacity: 0;
+        color: $primaire;
+        height: 69px;
+        width: 59px;
+        border-radius: 0 10px 10px 0;
+        margin: auto;
+        display: grid;
+        place-items: $centrer;
+        transition: transform 320ms ease;
+        transition: opacity 320ms ease-in;
+    }
+}
 
 footer {
     margin: 0;

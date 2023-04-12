@@ -488,7 +488,8 @@ main button {
   place-items: center;
   margin-bottom: 30px;
 }
-.body-card__text-description {
+
+.description {
   position: relative;
   background: white;
   border-radius: 15px;
@@ -497,28 +498,36 @@ main button {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   cursor: pointer;
-  transition: all 350ms;
+  transition: all 320ms;
 }
-
-.body-card__name-menu {
+.description:hover {
+  transform: scale(1.05);
+}
+.description:hover .description__check {
+  transform: translate(165px, -75px);
+  opacity: 1;
+}
+.description:hover .description__euros {
+  right: -30%;
+}
+.description__name-menu {
   display: flex;
   flex-direction: column;
   padding: 15px;
   gap: 5px;
+  width: -moz-max-content;
+  width: max-content;
 }
-.body-card__name-menu h4,
-.body-card__name-menu p {
+.description__name-menu h4 {
+  font-size: 18px;
   margin: 0;
 }
-.body-card__name-menu h4 {
-  font-size: 18px;
-}
-.body-card__name-menu p {
+.description__name-menu p {
   font-size: 15px;
   font-weight: 300;
+  margin: 0;
 }
-
-.body-card__euros {
+.description__euros {
   position: absolute;
   top: 50%;
   left: 91%;
@@ -526,20 +535,17 @@ main button {
   font-size: 15px;
   font-weight: 700;
 }
-.body-card__euros:hover {
-  right: -30%;
-}
-
-.body-card__check {
+.description__check {
   background: #99E2D0;
-  transform: translate(200px, -90px);
+  transform: translate(205px, -75px);
   opacity: 0;
   color: white;
   height: 69px;
   width: 59px;
   border-radius: 0 10px 10px 0;
   margin: auto;
-  text-align: center;
+  display: grid;
+  place-items: center;
   transition: transform 320ms ease;
   transition: opacity 320ms ease-in;
 }
