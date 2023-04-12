@@ -28,18 +28,18 @@
         margin: -20px 180px 0 180px;
     }
 
-        h2 {
-            position: relative;
-            display: flex;
-            padding: 30px 0 30px 20px;
-            gap: 40px;
-            font-family: $police1;
-            font-size: 28px;
-            font-weight: 400;
-            margin: 0;
-            @include heart-animation;
-            text-align: center;
-        }
+    h2 {
+        position: relative;
+        display: flex;
+        padding: 30px 0 30px 20px;
+        gap: 40px;
+        font-family: $police1;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0;
+        @include heart-animation;
+        text-align: center;
+    }
 
     button {
         width: 186px;
@@ -75,6 +75,7 @@
 
 .description {
     position: relative;
+    display: flex;
     background: $primaire;
     border-radius: 15px;
     width: 93%;
@@ -84,28 +85,27 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
-   
 
     &:hover {
-        transform: scale(1.05);
-    }
+        transform: scale(1.02);
 
-    &:hover &__check {
-        transform: translate(147px, -75px);
-        opacity: 1;
-    }
+        .description__check {
+            margin-right: 0;
+        }
 
-    &:hover &__euros {
-        right: -30%;
+        .far.fa-circle-check {
+            @include rotate;
+            animation: rotate 0.5s ease-in-out;
+        }
     }
 
     &__name-menu {
         display: flex;
         flex-direction: column;
-        padding: 15px;
+        padding: 12px;
         gap: 5px;
         width: 285px;
-            
+
         h4 {
             font-size: 18px;
             margin: 0;
@@ -114,41 +114,38 @@
         p {
             font-size: 15px;
             font-weight: 300;
-            margin: 0;    
-        }
-    }
-
-    &__euros {
-        position: absolute;
-        top: 50%;
-        left: 91%;
-        transform: translateX(-50%) translateY(15%);
-        font-size: 15px;
-        font-weight: 700;
-
-        p {
             margin: 0;
         }
     }
 
-    &__check {
-        background: $color-7;
-        transform: translate(205px, -75px);
-        opacity: 0;
-        color: $primaire;
-        height: 69px;
-        width: 59px;
-        border-radius: 0 10px 10px 0;
-        margin: auto;
-        display: grid;
-        place-items: $centrer;
-        transition: all 0.5s ease;
+    &__price {
+        display: flex;
+        font-size: 15px;
+        gap: 2px;
+        align-items: flex-end;
+        font-weight: 700;
+        margin: 0 10px 12px auto;
+
+        i {
+            line-height: 18px;
+        }
     }
 
-    i {
+    &__check {
+        width: 59px;
+        height: 69px;
+        border-radius: 0 15px 15px 0;
+        background: $color-7;
+        margin-right: -60px;
+        transition: all 0.5s;
+        color: $primaire;
+        display: grid;
+        place-items: $centrer;
         font-size: 20px;
     }
+
 }
+
 
 footer {
     margin: 0;
