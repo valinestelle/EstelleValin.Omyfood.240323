@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: #f7f7f7;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -58,6 +57,7 @@ nav form input {
   text-align: center;
   align-items: center;
   gap: 30px;
+  background: #f7f7f7;
 }
 .button .button__text {
   width: 100%;
@@ -158,6 +158,9 @@ button:hover {
   font-weight: 500;
 }
 
+.menus {
+  background: #f7f7f7;
+}
 @media screen and (min-width: 768px) {
   .menus {
     padding: 50px 180px 50px 180px;
@@ -191,7 +194,7 @@ button:hover {
   right: 20px;
 }
 .menus h2 {
-  padding: 0 0 0 10px;
+  padding: 50px 0 0 10px;
 }
 
 .card {
@@ -437,18 +440,18 @@ img {
   }
 }
 
-main {
+.resto-1 {
   background: #f7f7f7;
   position: relative;
   margin-top: -20px;
   border-radius: 15px 15px 0 0;
 }
 @media screen and (min-width: 768px) {
-  main {
+  .resto-1 {
     margin: -20px 180px 0 180px;
   }
 }
-main .header-card h2 {
+.resto-1 .header-card h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,7 +461,7 @@ main .header-card h2 {
   font-weight: 400;
   margin: 0;
 }
-main button {
+.resto-1 button {
   width: 186px;
   margin: 10px 0 40px 0;
 }
