@@ -531,12 +531,21 @@ footer .text-footer__liens {
   }
 }
 .grid h3 {
+  position: relative;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
-  border-bottom: 3px solid #99E2D0;
   margin-left: 15px;
-  padding: 0 0 5px 0;
+}
+.grid h3::after {
+  content: "";
+  position: absolute;
+  background: #99E2D0;
+  width: 40px;
+  height: 3px;
+  top: 27px;
+  left: 27px;
+  transform: translateX(-27px) translateY(-2px);
 }
 .grid__content {
   display: grid;
@@ -544,6 +553,7 @@ footer .text-footer__liens {
   gap: 25px;
   place-items: center;
   margin-bottom: 30px;
+  margin-top: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
