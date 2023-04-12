@@ -287,7 +287,7 @@ button:hover {
   font-size: 25px;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%);
+  transform: translateX(-40%) translateY(-20%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -307,7 +307,7 @@ button:hover {
   font-size: 25px;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%);
+  transform: translateX(-40%) translateY(-20%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -324,7 +324,7 @@ button:hover {
   opacity: 1;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%) scale(1);
+  transform: translateX(-40%) translateY(-20%) scale(1);
 }
 .card__description h3 {
   margin: 15px 15px 5px 15px;
@@ -418,7 +418,7 @@ footer .text-footer__liens {
   gap: 10px;
 }
 
-img {
+.banner img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
@@ -433,6 +433,7 @@ img {
   top: 50%;
   left: 8%;
   transform: translateX(-50%) translateY(-50%);
+  font-size: 19px;
 }
 @media screen and (min-width: 768px) {
   .header i {
@@ -451,7 +452,7 @@ img {
     margin: -20px 180px 0 180px;
   }
 }
-.resto-1 .header-card h2 {
+.resto-1 h2 {
   position: relative;
   display: flex;
   padding: 30px 0 30px 20px;
@@ -460,8 +461,9 @@ img {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
-.resto-1 .header-card h2::before {
+.resto-1 h2::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -474,14 +476,14 @@ img {
   font-size: 25px;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%);
+  transform: translateX(-40%) translateY(-20%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-.resto-1 .header-card h2::after {
+.resto-1 h2::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -494,7 +496,7 @@ img {
   font-size: 25px;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%);
+  transform: translateX(-40%) translateY(-20%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -504,39 +506,38 @@ img {
   opacity: 0;
   font-weight: 900;
 }
-.resto-1 .header-card h2:hover::before {
+.resto-1 h2:hover::before {
   opacity: 0;
 }
-.resto-1 .header-card h2:hover::after {
+.resto-1 h2:hover::after {
   opacity: 1;
   top: 40%;
   left: 89%;
-  transform: translateX(-40%) translateY(-40%) scale(1);
+  transform: translateX(-40%) translateY(-20%) scale(1);
 }
 .resto-1 button {
   width: 186px;
   margin: 10px 0 40px 0;
 }
 
-.body-card {
+.grid {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
-  .body-card {
+  .grid {
     padding: 0 180px 0 180px;
   }
 }
-.body-card h3 {
+.grid h3 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
   border-bottom: 3px solid #99E2D0;
   margin-left: 15px;
 }
-.body-card__grid {
+.grid__content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 25px;
