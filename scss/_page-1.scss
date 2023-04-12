@@ -84,7 +84,7 @@ main {
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
-    transition: all 320ms;
+   
 
     &:hover {
         transform: scale(1.05);
@@ -142,8 +142,7 @@ main {
         margin: auto;
         display: grid;
         place-items: $centrer;
-        transition: transform 320ms ease;
-        transition: opacity 320ms ease-in;
+        transition: all 0.5s ease;
     }
 
     i {

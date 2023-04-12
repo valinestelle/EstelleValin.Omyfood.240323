@@ -500,7 +500,6 @@ main button {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-  transition: all 320ms;
 }
 .description:hover {
   transform: scale(1.05);
@@ -550,8 +549,7 @@ main button {
   margin: auto;
   display: grid;
   place-items: center;
-  transition: transform 320ms ease;
-  transition: opacity 320ms ease-in;
+  transition: all 0.5s ease;
 }
 .description i {
   font-size: 20px;
