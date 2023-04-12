@@ -497,6 +497,8 @@ main button {
   height: 69px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
   transition: all 320ms;
 }
@@ -504,7 +506,7 @@ main button {
   transform: scale(1.05);
 }
 .description:hover .description__check {
-  transform: translate(165px, -75px);
+  transform: translate(147px, -75px);
   opacity: 1;
 }
 .description:hover .description__euros {
@@ -515,8 +517,7 @@ main button {
   flex-direction: column;
   padding: 15px;
   gap: 5px;
-  width: -moz-max-content;
-  width: max-content;
+  width: 285px;
 }
 .description__name-menu h4 {
   font-size: 18px;
@@ -531,9 +532,12 @@ main button {
   position: absolute;
   top: 50%;
   left: 91%;
-  transform: translateX(-50%) translateY(-20%);
+  transform: translateX(-50%) translateY(15%);
   font-size: 15px;
   font-weight: 700;
+}
+.description__euros p {
+  margin: 0;
 }
 .description__check {
   background: #99E2D0;

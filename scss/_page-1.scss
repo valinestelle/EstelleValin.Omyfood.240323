@@ -81,6 +81,8 @@ main {
     height: 69px;
     box-shadow: $shadow;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     cursor: pointer;
     transition: all 320ms;
 
@@ -89,9 +91,10 @@ main {
     }
 
     &:hover &__check {
-         transform: translate(165px, -75px);
-         opacity: 1;
+        transform: translate(147px, -75px);
+        opacity: 1;
     }
+
     &:hover &__euros {
         right: -30%;
     }
@@ -101,8 +104,8 @@ main {
         flex-direction: column;
         padding: 15px;
         gap: 5px;
-        width: max-content;
-
+        width: 285px;
+            
         h4 {
             font-size: 18px;
             margin: 0;
@@ -111,7 +114,7 @@ main {
         p {
             font-size: 15px;
             font-weight: 300;
-            margin: 0;
+            margin: 0;    
         }
     }
 
@@ -119,9 +122,13 @@ main {
         position: absolute;
         top: 50%;
         left: 91%;
-        transform: translateX(-50%) translateY(-20%);
+        transform: translateX(-50%) translateY(15%);
         font-size: 15px;
         font-weight: 700;
+
+        p {
+            margin: 0;
+        }
     }
 
     &__check {
@@ -138,6 +145,7 @@ main {
         transition: transform 320ms ease;
         transition: opacity 320ms ease-in;
     }
+
     i {
         font-size: 20px;
     }
