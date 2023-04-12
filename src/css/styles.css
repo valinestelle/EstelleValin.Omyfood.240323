@@ -496,6 +496,8 @@ main button {
   height: 69px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  cursor: pointer;
+  transition: all 350ms;
 }
 
 .body-card__name-menu {
@@ -524,18 +526,22 @@ main button {
   font-size: 15px;
   font-weight: 700;
 }
+.body-card__euros:hover {
+  right: -30%;
+}
 
-.body-card__choice {
-  position: absolute;
-  top: 50%;
-  right: -10.5%;
-  transform: translateX(-50%) translateY(-50%);
+.body-card__check {
   background: #99E2D0;
-  width: 59px;
+  transform: translate(200px, -90px);
+  opacity: 0;
+  color: white;
   height: 69px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  width: 59px;
+  border-radius: 0 10px 10px 0;
+  margin: auto;
+  text-align: center;
+  transition: transform 320ms ease;
+  transition: opacity 320ms ease-in;
 }
 
 footer {

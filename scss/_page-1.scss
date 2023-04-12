@@ -11,8 +11,9 @@ img {
     top: 50%;
     left: 8%;
     transform: translateX(-50%) translateY(-50%);
+
     @media screen and (min-width: $breakpoint) {
-       left: 3%;
+        left: 3%;
     }
 }
 
@@ -21,6 +22,7 @@ main {
     position: relative;
     margin-top: -20px;
     border-radius: 15px 15px 0 0;
+
     @media screen and (min-width: $breakpoint) {
         margin: -20px 180px 0 180px;
     }
@@ -37,10 +39,11 @@ main {
             margin: 0;
         }
     }
-        button {
-            width: 186px;
-            margin: 10px 0 40px 0;
-        }
+
+    button {
+        width: 186px;
+        margin: 10px 0 40px 0;
+    }
 }
 
 .body-card {
@@ -48,9 +51,11 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-top: 30px;
+
     @media screen and (min-width: $breakpoint) {
         padding: 0 180px 0 180px;
     }
+
     h3 {
         text-transform: uppercase;
         font-weight: 300;
@@ -75,6 +80,8 @@ main {
         height: 69px;
         box-shadow: $shadow;
         overflow: hidden;
+        cursor: pointer;
+        transition: all 350ms;
     }
 }
 
@@ -106,22 +113,26 @@ main {
     transform: translateX(-50%) translateY(-20%);
     font-size: 15px;
     font-weight: 700;
+    &:hover {
+       right: -30%;
+    }
 }
 
- .body-card__choice {
-     position: absolute;
-     top: 50%;
-     right: -10.5%;
-     transform: translateX(-50%) translateY(-50%);
-     background: $color-7;
-     width: 59px;
-     height: 69px;
-     align-items: $centrer;
-     justify-content: $centrer;
-     display: flex;
-     }
+.body-card__check {
+    background: $color-7;
+    transform: translate(200px, -90px);
+    opacity: 0;
+    color: $primaire;
+    height: 69px;
+    width: 59px;
+    border-radius: 0 10px 10px 0;
+    margin: auto;
+    text-align: $centrer;
+    transition: transform 320ms ease;
+    transition: opacity 320ms ease-in;
+}
 
-     
+
 footer {
     margin: 0;
 }
