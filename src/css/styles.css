@@ -549,6 +549,9 @@ main button {
   transition: transform 320ms ease;
   transition: opacity 320ms ease-in;
 }
+.description i {
+  font-size: 20px;
+}
 
 footer {
   margin: 0;
