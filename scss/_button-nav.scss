@@ -1,4 +1,4 @@
-.button {
+.présentation {
     display: flex;
     flex-direction: column;
     text-align: $centrer;
@@ -6,41 +6,27 @@
     gap: 30px;
     background: $secondaire;
 
-    .button__text {
+    .présentation__text {
         width: 100%;
 
-        & .button__title {
+        & .présentation__title {
             width: 70%;
             height: 68px;
             margin: auto;
             margin-top: 40px;
         }
 
-        & .button__subtitle {
+        & .présentation__subtitle {
             width: 90%;
             margin: auto;
             font-weight: 300;
             font-size: 18px;
         }
     }
-}
 
-button {
-    width: 218px;
-    height: 50px;
-    margin-bottom: 60px;
-    border-radius: $border-btn;
-    font-size: $size-p;
-    border: none;
-    background: $tertiaire;
-    color: $primaire;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    ;
-    cursor: pointer;
-    transition: 300ms ease-out;
-
-    &:hover {
-        transform: scale(1.2);
-        opacity: 0.8;
+    .explorer button {
+        width: 218px;
+        margin-bottom: 60px;
+        @include btn;
     }
 }

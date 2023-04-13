@@ -42,14 +42,33 @@
         transform: translateX(-40%) translateY(-20%) scale(1);
     }
 }
- @mixin rotate {
+
+@mixin rotate {
     @keyframes rotate {
-            0% {
-                transform: rotate(-270deg);
-            }
-    
-            100% {
-                transform: rotate(0);
-            }
+        0% {
+            transform: rotate(-270deg);
         }
- }
+
+        100% {
+            transform: rotate(0);
+        }
+    }
+}
+
+@mixin btn {
+    height: 50px;
+    border-radius: $border-btn;
+    font-size: $size-p;
+    border: none;
+    background: $tertiaire;
+    color: $primaire;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    ;
+    cursor: pointer;
+    transition: 300ms ease-out;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.9;
+    }
+}

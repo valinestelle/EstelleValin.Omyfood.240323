@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -51,7 +52,7 @@ nav form input {
   background-color: #EAEAEA;
 }
 
-.button {
+.présentation {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -59,38 +60,37 @@ nav form input {
   gap: 30px;
   background: #f7f7f7;
 }
-.button .button__text {
+.présentation .présentation__text {
   width: 100%;
 }
-.button .button__text .button__title {
+.présentation .présentation__text .présentation__title {
   width: 70%;
   height: 68px;
   margin: auto;
   margin-top: 40px;
 }
-.button .button__text .button__subtitle {
+.présentation .présentation__text .présentation__subtitle {
   width: 90%;
   margin: auto;
   font-weight: 300;
   font-size: 18px;
 }
-
-button {
+.présentation .explorer button {
   width: 218px;
-  height: 50px;
   margin-bottom: 60px;
+  height: 50px;
   border-radius: 25px;
   font-size: 16px;
   border: none;
   background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transition: 300ms ease-out;
 }
-button:hover {
+.présentation .explorer button:hover {
   transform: scale(1.2);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .fonction {
@@ -515,10 +515,6 @@ footer .text-footer__liens {
   left: 89%;
   transform: translateX(-40%) translateY(-20%) scale(1);
 }
-.resto-1 button {
-  width: 186px;
-  margin: 10px 0 40px 0;
-}
 
 .grid {
   display: flex;
@@ -630,6 +626,29 @@ footer .text-footer__liens {
   place-items: center;
   font-size: 20px;
   flex-shrink: 0;
+}
+
+.order {
+  display: grid;
+  place-items: center;
+}
+.order button {
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 300ms ease-out;
+  width: 186px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.order button:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
 }
 
 footer {

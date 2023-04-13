@@ -40,11 +40,6 @@
         @include heart-animation;
         text-align: center;
     }
-
-    button {
-        width: 186px;
-        margin: 10px 0 40px 0;
-    }
 }
 
 .grid {
@@ -62,17 +57,18 @@
         font-weight: 300;
         font-size: 16px;
         margin-left: 15px;
-       &::after {
-        content: "";
-        position: absolute;
-        background: $color-7;
-        width: 40px;
-        height: 3px;
-        top: 27px;
-        left: 27px;
-        transform: translateX(-27px) translateY(-2px);
-        
-       }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: $color-7;
+            width: 40px;
+            height: 3px;
+            top: 27px;
+            left: 27px;
+            transform: translateX(-27px) translateY(-2px);
+
+        }
     }
 
     &__content {
@@ -162,9 +158,19 @@
         font-size: 20px;
         flex-shrink: 0;
     }
-
 }
 
+.order {
+    display: grid;
+    place-items: center;
+
+    button {
+        @include btn;
+        width: 186px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+}
 
 footer {
     margin: 0;
