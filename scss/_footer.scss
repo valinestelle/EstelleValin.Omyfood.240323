@@ -12,6 +12,10 @@ footer {
         height: 114px;
     }
 
+    a:hover {
+        text-decoration: underline;
+    }
+
     .text-footer {
         display: flex;
         flex-direction: column;
