@@ -4,6 +4,10 @@
     flex-direction: column;
     height: 440px;
 
+    @media screen and (min-width: $breakpoint-2) {
+            padding: 0 50px;
+        }
+
     @media screen and (min-width: $breakpoint) {
         padding: 50px 180px 50px 180px;
         height: 228.38px;
@@ -36,6 +40,14 @@
         border-radius: 15px;
         box-shadow: $shadow;
         transition: 200ms;
+
+        @media screen and (min-width: $breakpoint-2) {
+            width: 93%;
+        }
+
+        @media screen and (min-width: $breakpoint-2) {
+            width: 85%;
+        }
 
         &:hover {
             transform: scale(1.1);

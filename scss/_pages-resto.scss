@@ -10,19 +10,19 @@
         display: block;
     }
 
-    @media screen and (min-width: $breakpoint) {
-        height: 500px;
-
-        & img {
-            height: 530px;
-        }
-    }
-
     @media screen and (min-width: $breakpoint-2) {
         height: 400px;
 
         & img {
             height: 430px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        height: 500px;
+
+        & img {
+            height: 530px;
         }
     }
 }
@@ -41,12 +41,12 @@
     margin-top: -55px;
     border-radius: 40px 40px 0 0;
 
-    @media screen and (min-width: $breakpoint) {
-        margin: -20px 180px 0 180px;
-    }
-
     @media screen and (min-width: $breakpoint-2) {
         margin: -20px 80px 0 80px;
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        margin: -20px 180px 0 180px;
     }
 
     h2 {
@@ -59,14 +59,14 @@
         font-weight: 400;
         margin: 0;
         @include heart-animation;
-        text-align: center;
-
-        @media screen and (min-width: $breakpoint) {
-            justify-content: center;
-        }
+        text-align: $centrer;
 
         @media screen and (min-width: $breakpoint-2) {
-            justify-content: center;
+            justify-content: $centrer;
+        }
+
+        @media screen and (min-width: $breakpoint) {
+            justify-content: $centrer;
         }
     }
 }
@@ -78,12 +78,12 @@
     gap: 15px;
     padding: 0 15px 0 15px;
 
-    @media screen and (min-width: $breakpoint) {
-        padding: 0 180px 0 180px;
-    }
-
     @media screen and (min-width: $breakpoint-2) {
         padding: 0 80px 0 80px;
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        padding: 0 180px 0 180px;
     }
 
     h3 {
