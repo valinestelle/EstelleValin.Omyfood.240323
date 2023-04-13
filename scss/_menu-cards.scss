@@ -62,8 +62,8 @@
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   @include chargement;
-  animation: chargement 3s;
-  animation-fill-mode: both;
+  animation: chargement 3s both;
+ 
 
   @media screen and (min-width: $breakpoint-2) {
     margin: 0;

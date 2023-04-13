@@ -123,6 +123,7 @@
             animation-delay: 300ms *$i;
         }
     }
+
     position: relative;
     display: flex;
     background: $primaire;
@@ -133,8 +134,8 @@
     overflow: hidden;
     cursor: pointer;
     @include chargement;
-    animation: chargement 3s;
-    animation-fill-mode: both;
+    animation: chargement 3s both;
+    transform-origin: top;
 
     &:hover {
         transform: scale(1.02);
