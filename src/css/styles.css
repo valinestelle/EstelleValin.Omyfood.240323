@@ -99,7 +99,7 @@ nav form input {
   flex-direction: column;
   height: 440px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .fonction {
     padding: 50px 180px 50px 180px;
     height: 228.38px;
@@ -114,7 +114,7 @@ nav form input {
   place-items: center;
   gap: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .fonction__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,7 +161,7 @@ nav form input {
 .menus {
   background: #f7f7f7;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menus {
     padding: 50px 180px 50px 180px;
   }
@@ -171,7 +171,7 @@ nav form input {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menus .menus__cards {
     grid-template-columns: repeat(2, 48.3%);
     justify-content: center;
@@ -212,7 +212,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .card__img-1 {
     background-position: center;
   }
@@ -229,7 +229,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .card__img-2 {
     background-position: center;
   }
@@ -246,7 +246,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .card__img-3 {
     background-position: center;
   }
@@ -263,7 +263,7 @@ nav form input {
   background-position: bottom;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .card__img-4 {
     background-position: center;
   }
@@ -342,7 +342,7 @@ footer {
   padding: 22px 25px 22px 25px;
   margin-top: 70px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer {
     display: flex;
     padding: 0px 25px 30px 25px;
@@ -357,7 +357,7 @@ footer .text-footer {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer {
     display: flex;
     flex-direction: row;
@@ -369,7 +369,7 @@ footer .text-footer .liens {
   flex-direction: column;
   gap: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer .liens {
     gap: 60px;
   }
@@ -379,7 +379,7 @@ footer .text-footer .liens__liens-1 {
   flex-direction: column;
   gap: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer .liens__liens-1 {
     display: flex;
     flex-direction: row;
@@ -390,13 +390,13 @@ footer .text-footer .liens__liens-2 {
   flex-direction: column;
   gap: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer .liens__liens-2 {
     display: flex;
     flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer .liens {
     display: flex;
     flex-direction: row;
@@ -406,7 +406,7 @@ footer .text-footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer .text-footer h3 {
     order: 2;
     line-height: 10px;
@@ -431,12 +431,20 @@ footer .text-footer__liens {
      object-position: center;
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .banner {
     height: 500px;
   }
   .banner img {
     height: 530px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+  .banner img {
+    height: 430px;
   }
 }
 
@@ -454,9 +462,14 @@ footer .text-footer__liens {
   margin-top: -55px;
   border-radius: 40px 40px 0 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .resto-1 {
     margin: -20px 180px 0 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resto-1 {
+    margin: -20px 80px 0 80px;
   }
 }
 .resto-1 h2 {
@@ -522,19 +535,9 @@ footer .text-footer__liens {
   left: 89%;
   transform: translateX(-40%) translateY(-20%) scale(1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .resto-1 h2 {
     justify-content: center;
-  }
-  .resto-1 h2::before {
-    top: 50%;
-    left: 64%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  .resto-1 h2::after {
-    top: 50%;
-    left: 64%;
-    transform: translateX(-50%) translateY(-50%);
   }
 }
 
@@ -544,9 +547,14 @@ footer .text-footer__liens {
   gap: 15px;
   padding: 0 15px 0 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .grid {
     padding: 0 180px 0 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    padding: 0 80px 0 80px;
   }
 }
 .grid h3 {
