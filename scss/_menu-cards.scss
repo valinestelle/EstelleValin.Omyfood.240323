@@ -4,16 +4,26 @@
   @media screen and (min-width: $breakpoint) {
     padding: 50px 180px 50px 180px;
   }
+    @media screen and (min-width: $breakpoint-2) {
+      padding: 0 50px;
+    }
 
   .menus__cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+   padding-bottom: 70px;
 
     @media screen and (min-width: $breakpoint) {
       grid-template-columns: repeat(2, 48.3%);
       justify-content: $centrer;
       gap: 60px;
+    }
+
+    @media screen and (min-width: $breakpoint-2) {
+      grid-template-columns: repeat(2, 48.3%);
+      justify-content: $centrer;
+      gap: 40px;
     }
 
     .badge {
@@ -44,6 +54,9 @@
   background-color: $primaire;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: $breakpoint-2) {
+    margin: 0;
+  }
 
   @for $i from 1 through 4 {
     &__img-#{$i} {

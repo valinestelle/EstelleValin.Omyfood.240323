@@ -64,6 +64,10 @@
         @media screen and (min-width: $breakpoint) {
             justify-content: center;
         }
+
+        @media screen and (min-width: $breakpoint-2) {
+            justify-content: center;
+        }
     }
 }
 
@@ -200,8 +204,4 @@
         margin-bottom: 40px;
         margin-top: 10px;
     }
-}
-
-footer {
-    margin: 0;
 }

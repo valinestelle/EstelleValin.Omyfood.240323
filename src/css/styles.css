@@ -166,16 +166,29 @@ nav form input {
     padding: 50px 180px 50px 180px;
   }
 }
+@media screen and (min-width: 768px) {
+  .menus {
+    padding: 0 50px;
+  }
+}
 .menus .menus__cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 1440px) {
   .menus .menus__cards {
     grid-template-columns: repeat(2, 48.3%);
     justify-content: center;
     gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(2, 48.3%);
+    justify-content: center;
+    gap: 40px;
   }
 }
 .menus .menus__cards .badge {
@@ -202,6 +215,11 @@ nav form input {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 0;
+  }
 }
 .card__img-1 {
   background-image: url("../../src/images/restaurants/menu-1.jpg");
@@ -340,7 +358,6 @@ footer {
   background: #353535;
   color: white;
   padding: 22px 25px 22px 25px;
-  margin-top: 70px;
 }
 @media screen and (min-width: 1440px) {
   footer {
@@ -540,6 +557,11 @@ footer .text-footer__liens {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .resto-1 h2 {
+    justify-content: center;
+  }
+}
 
 .grid {
   display: flex;
@@ -679,8 +701,4 @@ footer .text-footer__liens {
 .order button:hover {
   transform: scale(1.2);
   opacity: 0.9;
-}
-
-footer {
-  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
