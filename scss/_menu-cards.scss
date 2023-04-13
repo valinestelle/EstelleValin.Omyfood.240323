@@ -51,10 +51,19 @@
 }
 
 .card {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 300ms *$i;
+    }
+  }
+
   margin: 0 20px 0 20px;
   background-color: $primaire;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  @include chargement;
+  animation: chargement 3s;
+  animation-fill-mode: both;
 
   @media screen and (min-width: $breakpoint-2) {
     margin: 0;

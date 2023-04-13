@@ -114,11 +114,15 @@
         margin-top: 10px;
         text-overflow: ellipsis;
         white-space: nowrap;
-
     }
 }
 
 .description {
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: 300ms *$i;
+        }
+    }
     position: relative;
     display: flex;
     background: $primaire;
@@ -128,6 +132,9 @@
     box-shadow: $shadow;
     overflow: hidden;
     cursor: pointer;
+    @include chargement;
+    animation: chargement 3s;
+    animation-fill-mode: both;
 
     &:hover {
         transform: scale(1.02);
