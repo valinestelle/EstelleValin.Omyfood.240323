@@ -161,14 +161,14 @@ nav form input {
 .menus {
   background: #f7f7f7;
 }
-@media screen and (min-width: 1440px) {
-  .menus {
-    padding: 50px 180px 50px 180px;
-  }
-}
 @media screen and (min-width: 768px) {
   .menus {
     padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menus {
+    padding: 50px 180px 50px 180px;
   }
 }
 .menus .menus__cards {
@@ -177,18 +177,18 @@ nav form input {
   gap: 20px;
   padding-bottom: 70px;
 }
-@media screen and (min-width: 1440px) {
-  .menus .menus__cards {
-    grid-template-columns: repeat(2, 48.3%);
-    justify-content: center;
-    gap: 60px;
-  }
-}
 @media screen and (min-width: 768px) {
   .menus .menus__cards {
     grid-template-columns: repeat(2, 48.3%);
     justify-content: center;
     gap: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(2, 48.3%);
+    justify-content: center;
+    gap: 60px;
   }
 }
 .menus .menus__cards .badge {
@@ -219,6 +219,11 @@ nav form input {
 @media screen and (min-width: 768px) {
   .card {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    margin: 0 20px 0 20px;
   }
 }
 .card__img-1 {
