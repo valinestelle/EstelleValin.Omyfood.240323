@@ -16,63 +16,11 @@ body {
     opacity: 0.9;
     @include loader;
     animation: loader 200ms 2s forwards;
+    box-shadow: $box;
 
     &__logo {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        background: rgba(0, 0, 0, 0.75);
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background-image: conic-gradient(transparent, transparent, transparent, #9356DC);
-            animation: animate 4s linear infinite;
-            animation-delay: -2s;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background-image: conic-gradient(transparent, transparent, transparent, #99E2D0);
-            animation: animate 4s linear infinite;
-        }
-
-        @keyframes animate {
-            0% {
-                transform: rotate(0deg)
-            }
-
-            0% {
-                transform: rotate(360deg)
-            }
-        }
+        @include loader-animate;
     }
-    &__logo span {
-        position: absolute;
-        inset: 5px;
-        border-radius: 16px;
-        background: #0c1022;
-        z-index: 1;
-    }
-
-    &__logo h2 {
-        position: relative;
-        z-index: 2;
-        font-family: $police1;
-        font-size: 25px;
-        color: $primaire;
-    }
-
 }
 
 h3 {
