@@ -402,6 +402,7 @@ nav form input {
   left: 89%;
   transform: translateX(-40%) translateY(-20%);
   color: inherit;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
@@ -422,13 +423,14 @@ nav form input {
   left: 89%;
   transform: translateX(-40%) translateY(-20%);
   color: inherit;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
-  color: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0;
   font-weight: 900;
+  -webkit-text-fill-color: transparent;
 }
 .card__description:hover::before {
   opacity: 0;
@@ -613,6 +615,7 @@ footer .text-footer__liens {
   left: 89%;
   transform: translateX(-40%) translateY(-20%);
   color: inherit;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
@@ -633,13 +636,14 @@ footer .text-footer__liens {
   left: 89%;
   transform: translateX(-40%) translateY(-20%);
   color: inherit;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
-  color: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0;
   font-weight: 900;
+  -webkit-text-fill-color: transparent;
 }
 .resto-1 h2:hover::before {
   opacity: 0;

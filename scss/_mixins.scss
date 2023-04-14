@@ -13,6 +13,7 @@
     left: 89%;
     transform: translateX(-40%) translateY(-20%);
     color: inherit;
+    background: $tertiaire;
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
@@ -21,14 +22,14 @@
 
 @mixin heart-animation {
     &::before {
-        @include heart;
+        @include heart;    
     }
 
     &::after {
         @include heart;
-        color: $tertiaire;
         opacity: 0;
         font-weight: 900;
+        -webkit-text-fill-color: transparent;
     }
 
     &:hover::before {
@@ -102,4 +103,3 @@
         }
     }
 }
-
