@@ -17,12 +17,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
-    transition: all 200ms ease-in-out;
+    transition: all 500ms  ease-in-out;
 }
 
 @mixin heart-animation {
     &::before {
-        @include heart;    
+        @include heart;
     }
 
     &::after {

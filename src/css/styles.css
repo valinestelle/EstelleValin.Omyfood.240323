@@ -406,7 +406,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .card__description::after {
   display: inline-block;
@@ -427,7 +427,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
   opacity: 0;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
@@ -619,7 +619,7 @@ footer .text-footer__liens {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .resto-1 h2::after {
   display: inline-block;
@@ -640,7 +640,7 @@ footer .text-footer__liens {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
   opacity: 0;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
