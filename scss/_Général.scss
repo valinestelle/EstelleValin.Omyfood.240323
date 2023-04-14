@@ -9,7 +9,7 @@ body {
     display: grid;
     place-items: $centrer;
     height: 100vh;
-    background: black;
+    background: #0c1022;
     color: $secondaire;
     inset: 0;
     z-index: 1;
@@ -19,35 +19,58 @@ body {
 
     &__logo {
         position: relative;
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
         display: flex;
-        justify-content: $centrer;
-        align-items: $centrer;
-        font-family: $police1;
-        text-shadow: $text;
-        font-size: 30px;
-        width: 250px;
-        height: 250px;
-        background-color: black;
-        @include spin;
-        animation: spin 1s infinite ease-in-out;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
-       
         &::after {
             content: "";
             position: absolute;
-            left: 0;
-            top: 0;
-            box-shadow: $box;
-            border: 2px solid;
-            border-radius: 50%;
-            border-top: 0;
-            border-left: 0;
-            border-right: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-            transform: scaleX(1.02);
+            width: 400px;
+            height: 400px;
+            background-image: conic-gradient(transparent, transparent, transparent, #9356DC);
+            animation: animate 4s linear infinite;
+            animation-delay: -2s;
         }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-image: conic-gradient(transparent, transparent, transparent, #99E2D0);
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            0% {
+                transform: rotate(360deg)
+            }
+        }
+    }
+    &__logo span {
+        position: absolute;
+        inset: 5px;
+        border-radius: 16px;
+        background: #0c1022;
+        z-index: 1;
+    }
+
+    &__logo h2 {
+        position: relative;
+        z-index: 2;
+        font-family: $police1;
+        font-size: 25px;
+        color: $primaire;
     }
 
 }
