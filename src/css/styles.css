@@ -1,4 +1,20 @@
 @charset "UTF-8";
+.loader__logo span {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background: #0c1022;
+  z-index: 1;
+}
+
+.loader__logo h2 {
+  position: relative;
+  z-index: 2;
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -58,20 +74,6 @@ body {
   0% {
     transform: rotate(360deg);
   }
-}
-.loader__logo span {
-  position: absolute;
-  inset: 5px;
-  border-radius: 16px;
-  background: #0c1022;
-  z-index: 1;
-}
-.loader__logo h2 {
-  position: relative;
-  z-index: 2;
-  font-family: "Shrikhand", cursive;
-  font-size: 25px;
-  color: white;
 }
 
 h3 {
@@ -423,7 +425,8 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 500ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 .card__description::after {
   display: inline-block;
@@ -444,15 +447,16 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 500ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
   opacity: 0;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
 }
-.card__description:hover::before {
+.card__description:active::before {
   opacity: 0;
 }
-.card__description:hover::after {
+.card__description:active::after {
   opacity: 1;
   top: 40%;
   left: 89%;
@@ -636,7 +640,8 @@ footer .text-footer__liens {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 500ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 .resto-1 h2::after {
   display: inline-block;
@@ -657,15 +662,16 @@ footer .text-footer__liens {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 500ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
   opacity: 0;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
 }
-.resto-1 h2:hover::before {
+.resto-1 h2:active::before {
   opacity: 0;
 }
-.resto-1 h2:hover::after {
+.resto-1 h2:active::after {
   opacity: 1;
   top: 40%;
   left: 89%;
