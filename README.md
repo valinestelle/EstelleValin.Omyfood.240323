@@ -44,8 +44,8 @@ code réalisé uniquement en CSS/SASS.
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-|  Primaire | ![#9356DC](https://via.placeholder.com/10/0a192f?text=+) #9356DC |
-| Secondaire | ![#FF79DA](https://via.placeholder.com/10/f8f8f8?text=+) #FF79DA |
-| Tertiaire | ![#99E2D0](https://via.placeholder.com/10/00b48a?text=+) #99E2D0 |
+| Example color | #9356DC
+| Example Color | #FF79DA|
+| Example Color | #99E2D0|
 
 
