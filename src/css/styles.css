@@ -161,6 +161,7 @@ nav form input {
 }
 .présentation .explorer button:hover {
   transform: scale(1.2);
+  filter: brightness(1.08);
   opacity: 0.9;
 }
 
@@ -846,5 +847,6 @@ footer .text-footer__liens {
 }
 .order button:hover {
   transform: scale(1.2);
+  filter: brightness(1.08);
   opacity: 0.9;
 }/*# sourceMappingURL=styles.css.map */

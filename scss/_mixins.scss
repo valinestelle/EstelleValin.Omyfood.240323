@@ -12,12 +12,13 @@
     top: 40%;
     left: 89%;
     transform: translateX(-40%) translateY(-20%);
-    color: inherit;;
+    color: inherit;
+    ;
     background: $gradient;
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
-    transition: all 200ms  ease-in-out;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
 }
 
@@ -70,6 +71,7 @@
 
     &:hover {
         transform: scale(1.2);
+        filter: brightness(1.08);
         opacity: 0.9;
     }
 }
