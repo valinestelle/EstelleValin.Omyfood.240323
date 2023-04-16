@@ -58,8 +58,13 @@
         font-size: 28px;
         font-weight: 400;
         margin: 0;
-        @include heart-animation;
-        text-align: $centrer;
+
+        .heart {
+            @include heart-animation;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20%);
+        }
 
         @media screen and (min-width: $breakpoint-2) {
             justify-content: $centrer;
