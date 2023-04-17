@@ -18,13 +18,13 @@
     @media screen and (min-width: $breakpoint-2) {
       grid-template-columns: repeat(2, 48.3%);
       justify-content: $centrer;
-      gap: 40px;
+      gap: 30px;
     }
 
     @media screen and (min-width: $breakpoint) {
-      grid-template-columns: repeat(2, 48.3%);
+      grid-template-columns: repeat(2, 49%);
       justify-content: $centrer;
-      gap: 60px;
+      gap: 70px;
     }
 
     .badge {
@@ -46,7 +46,12 @@
   }
 
   h2 {
-    padding: 50px 0 0 10px;
+    padding: 50px 0 20px 20px;
+    margin: 0;
+
+    @media screen and (min-width: $breakpoint-2) {
+        padding: 50px 0 20px 0;
+      }
   }
 }
 

@@ -5,8 +5,8 @@
     height: 440px;
 
     @media screen and (min-width: $breakpoint-2) {
-            padding: 0 50px;
-        }
+        padding: 0 50px;
+    }
 
     @media screen and (min-width: $breakpoint) {
         padding: 50px 180px 50px 180px;
@@ -15,6 +15,10 @@
 
     h2 {
         padding: 30px 0 5px 20px;
+
+        @media screen and (min-width: $breakpoint-2) {
+            padding: 30px 0 5px 0;
+        }
     }
 
     &__list {
