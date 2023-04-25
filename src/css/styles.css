@@ -447,7 +447,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out linear;
   cursor: pointer;
 }
 .card__heart::after {
@@ -469,7 +469,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out linear;
   cursor: pointer;
   opacity: 0;
   font-weight: 900;
@@ -570,7 +570,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out linear;
   cursor: pointer;
 }
 .resto-1 h2 .heart::after {
@@ -592,7 +592,7 @@ nav form input {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out linear;
   cursor: pointer;
   opacity: 0;
   font-weight: 900;
